@@ -2,10 +2,9 @@ import gymnasium as gym
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 #  Function to select an action based on the action selection code
 # 0: random action, 1: push to the right, 2: two rules, 3: four rules, 4: enhanced rule
-
-
 def select_action(action_selection_code):
     if action_selection_code == 0:
         action = env.action_space.sample()  # random action
